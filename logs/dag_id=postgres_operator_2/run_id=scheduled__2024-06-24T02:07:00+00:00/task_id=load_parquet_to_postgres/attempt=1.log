@@ -1,0 +1,64 @@
+[2024-06-24T02:08:01.521+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-24T02:08:01.536+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: postgres_operator_2.load_parquet_to_postgres scheduled__2024-06-24T02:07:00+00:00 [queued]>
+[2024-06-24T02:08:01.542+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: postgres_operator_2.load_parquet_to_postgres scheduled__2024-06-24T02:07:00+00:00 [queued]>
+[2024-06-24T02:08:01.543+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-24T02:08:01.552+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_parquet_to_postgres> on 2024-06-24 02:07:00+00:00
+[2024-06-24T02:08:01.558+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=933) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-24T02:08:01.561+0000] {standard_task_runner.py:63} INFO - Started process 935 to run task
+[2024-06-24T02:08:01.560+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'postgres_operator_2', 'load_parquet_to_postgres', 'scheduled__2024-06-24T02:07:00+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpqxoclv_4']
+[2024-06-24T02:08:01.563+0000] {standard_task_runner.py:91} INFO - Job 31: Subtask load_parquet_to_postgres
+[2024-06-24T02:08:01.607+0000] {task_command.py:426} INFO - Running <TaskInstance: postgres_operator_2.load_parquet_to_postgres scheduled__2024-06-24T02:07:00+00:00 [running]> on host 18d040e2d413
+[2024-06-24T02:08:01.664+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='postgres_operator_2' AIRFLOW_CTX_TASK_ID='load_parquet_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2024-06-24T02:07:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-24T02:07:00+00:00'
+[2024-06-24T02:08:01.667+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-24T02:08:01.703+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.704+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.706+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.709+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.713+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.713+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.713+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.714+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.747+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.760+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.762+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.764+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.780+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.797+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.797+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.796+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.961+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.958+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.976+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.979+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.983+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.987+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.988+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.988+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.991+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.996+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:01.999+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.004+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.003+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.006+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.000+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.010+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.019+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.019+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.025+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.053+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.055+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.062+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.063+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.072+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.086+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.093+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.110+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.112+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-06-24T02:08:02.169+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-24T02:08:02.170+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-24T02:08:02.178+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=postgres_operator_2, task_id=load_parquet_to_postgres, run_id=scheduled__2024-06-24T02:07:00+00:00, execution_date=20240624T020700, start_date=20240624T020801, end_date=20240624T020802
+[2024-06-24T02:08:02.197+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-24T02:08:02.218+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-24T02:08:02.221+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

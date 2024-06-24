@@ -1,6 +1,6 @@
 How to setup:
-- run at terminal in the framework directory: docker compose up airflow-init
-- then run: docker compose up
+- run at terminal in the framework directory: docker-compose up airflow-init
+- then run: docker-compose up
 - open Airflow web interface via http://localhost:8087 
 - insert username: airflow, password: airflow
 - At the menu bar click Admin > Connections

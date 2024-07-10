@@ -27,17 +27,16 @@ def load_parquet_batch(parquet_files):
     
     for parquet_file in parquet_files:
         df = pq.read_table(os.path.join('/opt/airflow/data_sample', parquet_file)).to_pandas()
-        df.columns = ['department_name','sensor_serial','create_at','product_name','product_expire']
         df.to_sql('airflow', engine, if_exists='append', index=False)
     
-    #set flag when finish
+    #set flag when finishx
     context['ti'].xcom_push(key='batch_loaded', value=True)
 
 def load_parquet_to_postgres():
     parquet_files = [f for f in os.listdir('/opt/airflow/data_sample') if f.endswith('.parquet')]
     
     # Use ThreadPoolExecutor for parallel processing
-    batch_size = 1500  # Number of files per batch
+    batch_size = 1000  # Number of files per batch
     max_workers = 16   # Number of threads to use
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
